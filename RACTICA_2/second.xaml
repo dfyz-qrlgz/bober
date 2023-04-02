@@ -1,0 +1,18 @@
+﻿<Window x:Class="RACTICA_2.second"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RACTICA_2"
+        mc:Ignorable="d"
+       Title="second" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="datagrid2" HorizontalAlignment="Center" CanUserAddRows="False" Height="176" Margin="0,41,0,0" VerticalAlignment="Top" Width="728" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button Name="btn2" Content="первая таблица" HorizontalAlignment="Left" Margin="612,326,0,0" VerticalAlignment="Top" Height="65" Width="152" Click="btn2_Click"/>
+        <TextBox x:Name="Bookid" HorizontalAlignment="Left" Height="33" Margin="41,326,0,0" TextWrapping="Wrap" Text="id книги" VerticalAlignment="Top" Width="53"/>
+        <TextBox x:Name="BkName" HorizontalAlignment="Left" Height="33" Margin="99,326,0,0" TextWrapping="Wrap" Text="Название книги" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="BAthid" HorizontalAlignment="Left" Height="33" Margin="220,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" Text="ID автора книги" RenderTransformOrigin="0,0.501"/>
+        <Button x:Name="btn4" Content="Button" HorizontalAlignment="Left" Height="27" Margin="41,364,0,0" VerticalAlignment="Top" Width="359" Click="btn4_Click"/>
+        <DatePicker x:Name="PubDate" HorizontalAlignment="Left" Margin="279,327,0,0" VerticalAlignment="Top" Height="32" Width="121"/>
+    </Grid>
+</Window>
